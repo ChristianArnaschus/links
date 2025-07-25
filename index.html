@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vorname Nachname – Social Media</title>
+
+  <!-- Fonts von Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500&family=Quicksand:wght@400&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+
+  <style>
+    :root {
+      --text: #130e01;
+      --background: #c3e2d1;
+      --primary: #d6a751;
+      --secondary: #2f9f94;
+      --accent: #e68632;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Quicksand", sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: var(--background);
+      color: var(--text);
+    }
+
+    .container {
+      text-align: center;
+      padding: 2rem;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      max-width: 320px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .profile-image {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      border: 3px solid var(--primary);
+    }
+
+    .name {
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+
+    h1 {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+      color: var(--text);
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .social-icons a {
+      color: var(--secondary);
+      transition: color 0.3s, transform 0.2s;
+    }
+
+    .social-icons a:hover {
+      color: var(--accent);
+      transform: scale(1.2);
+    }
+
+    .footer {
+      font-size: 0.85rem;
+      color: #666;
+      margin-top: auto;
+    }
+
+    .footer a {
+      color: inherit;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img class="profile-image" src="profile.jpeg" alt="Profilbild" />
+    <div class="name">Vorname Nachname</div>
+    <h1>Folge mir auf</h1>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/dein_name" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://500px.com/dein_name" target="_blank" aria-label="500px">
+        <i class="fab fa-500px"></i>
+      </a>
+    </div>
+    <div class="footer">
+      <a href="mailto:dein@email.de">dein@email.de</a><br />
+      <a href="/impressum.html">Impressum</a>
+    </div>
+  </div>
+</body>
+</html>
